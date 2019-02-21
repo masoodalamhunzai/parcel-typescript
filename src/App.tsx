@@ -1,12 +1,15 @@
 import * as React from "react";
-import First from "./components/First";
+import Header from "./components/header";
+import Main from "./components/main";
+import Footer from "./components/footer";
 
 
 export default () => {
   return (
     <div>
-      <First name="This is the first Component" age='23' college="HHS" />
-      <First name="This is the second Component" />
+       <Header />  
+       <Main />
+       <Footer />
     </div>
 
   );

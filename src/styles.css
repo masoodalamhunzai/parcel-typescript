@@ -1,3 +1,274 @@
 body {
-    background: #ddd;
+    background: #f5f6f5;
+    margin: 0px;
+
+}
+.header{
+    display: flex;
+    height: 5rem;
+    background-color: #4267b2;
+    border: 1px   solid grey;
+    color: #fafbfd;    
+}
+.top-bar {
+    display: flex;
+    height: 5rem;
+    background-color: #4267b2;
+    border: 1px   solid grey;
+    color: #fafbfd;  
+}
+.top-bar > ul{
+    list-style-type: none; 
+    padding: 0.5rem;
+ }
+ .top-bar > ul > li{
+     padding: 1rem;
+     color: #64686e;   
+ }
+ .top-bar> ul > li a{
+     padding: 0.5rem;
+     color: #64686e;
+     text-decoration: none;
+     font-size: 1.1rem;
+    
+ }
+.main{
+    display:  flex;
+    justify-content: start;
+    flex-direction: row;
+    background-color:#ffffff;
+    min-height: 100vh;
+   
+}
+.main > div  >{
+    /* display:  flex; */
+    margin: 0;
+}
+.main > div > div >{
+    /* display:  flex; */
+    margin: 0;
+}
+.main > div > div > .side-bar{
+    display:  inline-flex;
+    flex-basis: 10rem;
+    flex-direction: column;
+    background-color:#e9ebee;
+    border: 1px solid #e9ebee;
+    border-top: none;
+    border-bottom: none;
+    border-right: 2px double #e9ebee;
+    height: 100vh;
+    margin: 0px;
+}
+
+.main > div > div >  .side-bar > ul{
+    list-style-type: none; 
+    padding: 0.5rem;
+ }
+ .main > div > div > .side-bar > ul > li{
+     padding: 1rem;
+     color: #64686e;   
+ }
+ .main > div > div > .side-bar > ul > li a{
+     padding: 0.5rem;
+     color: #64686e;
+     text-decoration: none;
+     font-size: 1.1rem;
+    
+ }
+.main > div > div > .content-wrapper{
+ 
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 2rem;
+    background-color:#ffffff;
+    /* border: 1px solid #e9ebee; */
+   
+}
+.main > div > div > .content-wrapper > .todo-content{
+    display:  flex;
+    flex-direction: row;
+    padding: 0 2rem 2rem;
+    justify-content: center;
+    background-color:#ffffff;
+    border: 1px solid #d2d6db;
+    /* margin: 1rem; */
+    
+}
+#text {
+    padding: 1rem;
+    margin:0.2rem;
+    justify-content: center;
+    color:#4267b2;
+    border: 1px solid #d2d6db;
+    font-weight: bold;
+    font-size: 1rem;
+    width:38rem; 
+}
+
+.table{
+    border: 1px solid #d2d6db;
+    padding: 1rem;
+    width: 50rem;
+    margin-top:1rem;
+}
+.table th ,tr ,td{
+    
+    border: 1px solid #d2d6db;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+.add-items {
+    background-color: #4267b2;
+    color: #eeeff2;
+    border: none;
+    padding: 1.2rem;
+    width:9rem;
+}
+.delete {
+    background-color: rgb(204, 67, 67);
+    border-radius: 5px;
+    color: #eeeff2;
+    border: none;
+    padding: 1.24rem;
+    width:5rem;
+}
+.done {
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: #eeeff2;
+    border: none;
+    padding: 1.24rem;
+    width:5rem;
+}
+.error::placeholder{
+    color:red   ; 
+}
+.success::placeholder{
+    color:blue   ; 
+}
+.main >  div > div > .content-wrapper > .form-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 2rem 0;
+    justify-content: center;
+    background-color: #ffffff;  
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div {
+margin-left: 10rem;
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form > span{
+        margin: 0px;
+        padding: 0.5rem;   
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form{
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem ;
+    background-color:#ffffff; 
+    border: 1px solid #d2d6db;
+   
+}
+.main > div > div > .content-wrapper > .form-wrapper > div > .form > #input{
+    padding: 0.8rem;
+    margin-top:0.6rem;
+    color:#4267b2;
+    border: 1px solid #d2d6db;
+    font-weight: bold;
+    font-size: 1rem;
+     width:40rem; 
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form > label{
+    display:flex;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    color:#4267b2;   
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form > .gender {
+    display: inline-flex;
+    width:1rem;
+    height:1rem;
+    margin :1rem;
+    text-transform: capitalize;
+    color:#4267b2;   
+    font-weight: bold;
+    font-size: 0.9rem; 
+}
+
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form > .checkbox > label{
+display: flex;
+padding:1rem 1rem 1rem 0;
+font-size: 1rem;
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form > .checkbox {
+    display:flex;
+    padding-bottom: 1rem;
+    padding-left: 0;
+    width:1rem;
+    height:1rem;
+    margin :1rem;
+    text-transform: capitalize;
+    color:#4267b2;   
+    font-weight: bold;
+    font-size: 0.9rem; 
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .form > .reg-btn {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #4267b2;
+    color: #eeeff2;
+    border: none;
+    margin-top: 2rem;
+    padding: 1.24rem;
+    width: 7rem;
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .reg-table{
+    border: 1px solid #d2d6db;
+    padding: 1rem;
+    min-width: 46rem;
+    margin-top:1rem;
+}
+.main > div > div > .content-wrapper > .form-wrapper >  div > .reg-table > th ,tr ,td{
+    
+    border: 1px solid #d2d6db;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.footer{
+    display: flex;
+    height: 5rem;
+    background-color:#224385;
+    border: 1px solid #e9ebee;
+    color: #fafbfd;
+}
+h3{
+    padding: 1rem;
+    margin: 0 auto;
+  font-size: 2rem;
+    text-align: center;
+}
+h2{
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    color: #3a61b0;
+}
+span {
+    display: flex;
+    color: rgb(204, 67, 67);
+    border: none;
+    padding: 1.24rem;
+    width: 10rem;
+    margin-left: 1.9rem;
 }
